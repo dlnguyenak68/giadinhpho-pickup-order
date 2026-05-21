@@ -1,0 +1,121 @@
+.cart-panel {
+  background: #fff;
+  border: 1px solid #e0ddd6;
+  padding: 1.25rem;
+  position: sticky;
+  top: 1rem;
+}
+
+.cart-panel h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.35rem;
+  margin: 0 0 1rem;
+}
+
+.cart-empty {
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0;
+}
+
+.cart-lines {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+.cart-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem;
+}
+
+.cart-line-name {
+  font-weight: 600;
+}
+
+.cart-line-qty {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.cart-totals {
+  border-top: 2px solid #4a4a4a;
+  padding-top: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.cart-totals div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.35rem;
+  font-size: 0.9rem;
+}
+
+.cart-totals .total-row {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #c2185b;
+  margin-top: 0.5rem;
+}
+
+.checkout-form label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+  color: #444;
+}
+
+.checkout-form input,
+.checkout-form select,
+.checkout-form textarea {
+  width: 100%;
+  padding: 0.55rem 0.65rem;
+  border: 1px solid #ccc;
+  margin-bottom: 0.85rem;
+  font-size: 0.9rem;
+  border-radius: 2px;
+}
+
+.checkout-form input:focus,
+.checkout-form select:focus,
+.checkout-form textarea:focus {
+  outline: none;
+  border-color: #c2185b;
+}
+
+.checkout-form textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.place-order-btn {
+  width: 100%;
+  padding: 0.85rem;
+  background: #c2185b;
+  color: #fff;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+.place-order-btn:hover:not(:disabled) {
+  background: #9e1449;
+}
+
+.place-order-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}

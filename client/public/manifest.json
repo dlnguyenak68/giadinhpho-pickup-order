@@ -1,0 +1,9 @@
+{
+  "short_name": "Gia Dinh Pickup",
+  "name": "Gia Dinh Pho Pickup Orders",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#c2185b",
+  "background_color": "#f5f3ef"
+}

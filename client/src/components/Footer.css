@@ -1,0 +1,30 @@
+.site-footer {
+  background: #4a4a4a;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+.site-footer h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1rem;
+  margin: 0 0 0.75rem;
+  letter-spacing: 0.02em;
+}
+
+.site-footer p {
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.8rem;
+  margin: 0.25rem 0;
+  line-height: 1.5;
+}
+
+.site-footer a {
+  color: #f5c6d8;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}

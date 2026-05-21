@@ -1,0 +1,5 @@
+{
+  "watch": ["index.js", "data/menu.js"],
+  "ignore": ["data/orders.json"],
+  "ext": "js,json"
+}

@@ -1,0 +1,156 @@
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #e0ddd6;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem 0.75rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo-block {
+  text-align: right;
+}
+
+.logo-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #c2185b;
+  letter-spacing: 0.04em;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.logo-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #2a2a2a;
+  margin: 0.15rem 0 0;
+  letter-spacing: 0.02em;
+}
+
+.logo-accent-line {
+  height: 3px;
+  width: 100%;
+  max-width: 220px;
+  margin: 0.35rem 0 0 auto;
+  background: linear-gradient(90deg, #4a7c3f 0%, #6b9b5a 50%, #4a7c3f 100%);
+  border-radius: 2px;
+}
+
+.header-tagline {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  color: #c2185b;
+  margin: 0;
+}
+
+.site-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.nav-link {
+  display: block;
+  text-align: center;
+  padding: 0.9rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background: #4a4a4a;
+  transition: background 0.2s;
+}
+
+.nav-link.secondary {
+  background: #eceae4;
+  color: #2a2a2a;
+}
+
+.nav-link.active {
+  background: #4a4a4a;
+  color: #fff;
+}
+
+.nav-link:hover {
+  opacity: 0.92;
+}
+
+.hero-strip {
+  position: relative;
+  min-height: 140px;
+  background:
+    linear-gradient(rgba(30, 30, 30, 0.7), rgba(30, 30, 30, 0.7)),
+    linear-gradient(135deg, #5c4033 0%, #3d3d3d 50%, #2a2a2a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+}
+
+.hero-welcome {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #fff;
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.hero-text {
+  font-family: 'Courier Prime', monospace;
+  color: #fff;
+  font-size: 0.9rem;
+  max-width: 520px;
+  text-align: center;
+  margin: 0.5rem 0 0;
+  line-height: 1.6;
+}
+
+.restaurant-info {
+  background: #fff;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.85rem;
+  color: #444;
+  border-bottom: 1px solid #e0ddd6;
+}
+
+.restaurant-info a {
+  color: #c2185b;
+  text-decoration: none;
+}
+
+.restaurant-info a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .header-top {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .logo-block {
+    text-align: center;
+  }
+
+  .logo-accent-line {
+    margin: 0.35rem auto 0;
+  }
+
+  .hero-welcome {
+    font-size: 2.25rem;
+  }
+}
