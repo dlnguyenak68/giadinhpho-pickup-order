@@ -11,7 +11,10 @@
     "start": "NODE_ENV=production npm start --prefix server",
     "server": "npm start --prefix server",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run dev --prefix server\" \"npm start --prefix client\""
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm start --prefix client\"",
+    "test": "npm test --prefix server && CI=true npm test --prefix client -- --watchAll=false",
+    "test:server": "npm test --prefix server",
+    "test:client": "CI=true npm test --prefix client -- --watchAll=false"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"

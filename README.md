@@ -98,6 +98,19 @@ npx create-react-app client
 5. **Styling** — CSS variables and fonts aligned with the existing Wix brand.
 6. **Possible next steps** — Payment (Stripe), kitchen dashboard, email/SMS notifications, auth for staff.
 
+## Tests
+
+```bash
+# Run all tests (server + client)
+npm test
+
+# Server API tests only
+npm run test:server
+
+# React component tests only
+npm run test:client
+```
+
 ## Deploy to Railway
 
 One Railway service runs the **API and the built React app** together.
