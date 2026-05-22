@@ -98,6 +98,33 @@ npx create-react-app client
 5. **Styling** — CSS variables and fonts aligned with the existing Wix brand.
 6. **Possible next steps** — Payment (Stripe), kitchen dashboard, email/SMS notifications, auth for staff.
 
+## Deploy to Railway
+
+One Railway service runs the **API and the built React app** together.
+
+### Steps
+
+1. Sign in at [railway.com](https://railway.com) and create a **New Project**.
+2. Choose **Deploy from GitHub repo** → select `dlnguyenak68/giadinhpho-pickup-order`.
+3. Railway detects the root `package.json` and `railway.toml` automatically.
+4. Deploy. No extra environment variables are required for a basic deploy.
+5. Open the generated **public URL** (Settings → Networking → Generate Domain).
+
+### How production works
+
+- **Build:** `npm run build` installs dependencies, builds the React app into `client/build`, and installs server dependencies.
+- **Start:** `npm start` runs Express with `NODE_ENV=production`.
+- Express serves `/api/*` and static files from `client/build` on the same port (Railway’s `PORT`).
+
+### Health check
+
+`GET /api/health` — used by Railway to verify the service is up.
+
+### Notes on Railway
+
+- **Orders** are stored in `server/data/orders.json` on the container disk. They reset when the service redeploys unless you add a [Railway Volume](https://docs.railway.com/guides/volumes) mounted at `/app/server/data`.
+- For a real restaurant app, use a database (PostgreSQL on Railway) instead of a JSON file.
+
 ## Notes
 
 - Menu data lives only on the backend — update `server/data/menu.js` to change what the app displays.

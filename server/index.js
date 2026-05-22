@@ -99,6 +99,18 @@ app.post('/api/orders', (req, res) => {
   res.status(201).json(order);
 });
 
-app.listen(PORT, () => {
-  console.log(`Gia Dinh pickup API running on http://localhost:${PORT}`);
+if (process.env.NODE_ENV === 'production') {
+  const clientBuildPath = path.join(__dirname, '../client/build');
+  app.use(express.static(clientBuildPath));
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(clientBuildPath, 'index.html'));
+  });
+}
+
+if (!fs.existsSync(ORDERS_FILE)) {
+  writeOrders([]);
+}
+
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Gia Dinh pickup app running on port ${PORT}`);
 });
