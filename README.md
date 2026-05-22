@@ -183,12 +183,4 @@ One Railway service runs the **API and built React app** together.
 
 **Production:** Express serves `/api/*` and `client/build` on Railway’s `PORT`. Health check: `GET /api/health`.
 
-**Note:** Orders in `orders.json` reset on redeploy unless you add a [Railway Volume](https://docs.railway.com/guides/volumes).
-
----
-
-## Notes
-
-- Update menu in `server/data/menu.js` only.
-- Tax is 5% on the server (adjust for your demo narrative).
-- `orders.json` is gitignored; not committed to the repo.
+**Note:** Orders in `orders.json` reset on redeploy unless you add a [Railway Volume](https://docs.railway.com/guides/volumes). Update the menu in `server/data/menu.js`. Tax is calculated at 5% on the server.
