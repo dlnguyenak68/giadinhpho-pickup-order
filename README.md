@@ -1,8 +1,14 @@
-# Gia Dinh Pho — Pickup Order App
+# Gia Dinh Pho — Online Pickup Orders
 
-A full-stack demo for **online pickup orders** at [Gia Dinh Pho](https://www.giadinhpho.com/)
+Online pickup ordering for **[Gia Dinh Pho](https://www.giadinhpho.com/)** — an extension of the restaurant’s existing website so customers can browse the menu and place pickup orders.
 
-**Live repo:** [github.com/dlnguyenak68/giadinhpho-pickup-order](https://github.com/dlnguyenak68/giadinhpho-pickup-order)
+## Links
+
+| | |
+|---|---|
+| **Place a pickup order (live app)** | **[https://giadinhpho-pickup-order-production.up.railway.app](https://giadinhpho-pickup-order-production.up.railway.app)** |
+| Restaurant website | [https://www.giadinhpho.com](https://www.giadinhpho.com) |
+| Source code | [https://github.com/dlnguyenak68/giadinhpho-pickup-order](https://github.com/dlnguyenak68/giadinhpho-pickup-order) |
 
 | Layer | Tech |
 |-------|------|
@@ -99,6 +105,8 @@ npm start --prefix client
 
 Open [http://localhost:3000](http://localhost:3000). The dev server proxies `/api/*` to port 5001.
 
+For the deployed app, use **[https://giadinhpho-pickup-order-production.up.railway.app](https://giadinhpho-pickup-order-production.up.railway.app)**.
+
 ---
 
 ## API Endpoints
@@ -171,6 +179,8 @@ One Railway service runs the **API and built React app** together.
 2. Railway uses `railway.toml` (`npm run build` → `npm start`)
 3. **Settings → Networking → Generate Domain**
 
+**Live app:** [https://giadinhpho-pickup-order-production.up.railway.app](https://giadinhpho-pickup-order-production.up.railway.app)
+
 **Production:** Express serves `/api/*` and `client/build` on Railway’s `PORT`. Health check: `GET /api/health`.
 
 **Note:** Orders in `orders.json` reset on redeploy unless you add a [Railway Volume](https://docs.railway.com/guides/volumes).
@@ -180,7 +190,7 @@ One Railway service runs the **API and built React app** together.
 ## Interview Talking Points
 
 1. **Full-stack flow** — React fetches menu → cart state → POST order → confirmation.
-2. **REST API** — Clear routes, server validation, JSON persistence (demo; DB for production).
+2. **REST API** — Clear routes, server validation, JSON persistence (file-based for now; database for production).
 3. **React patterns** — `useState`, `useEffect`, `useMemo`, props, presentational components.
 4. **Testing** — API integration tests with Supertest; component tests with RTL.
 5. **Deploy** — Single-service Railway setup; same-origin API and UI in production.
