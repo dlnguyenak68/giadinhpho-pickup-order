@@ -187,17 +187,6 @@ One Railway service runs the **API and built React app** together.
 
 ---
 
-## Interview Talking Points
-
-1. **Full-stack flow** — React fetches menu → cart state → POST order → confirmation.
-2. **REST API** — Clear routes, server validation, JSON persistence (file-based for now; database for production).
-3. **React patterns** — `useState`, `useEffect`, `useMemo`, props, presentational components.
-4. **Testing** — API integration tests with Supertest; component tests with RTL.
-5. **Deploy** — Single-service Railway setup; same-origin API and UI in production.
-6. **Next steps** — PostgreSQL, Stripe payments, kitchen dashboard, auth.
-
----
-
 ## Notes
 
 - Update menu in `server/data/menu.js` only.
