@@ -1,6 +1,6 @@
 # Gia Dinh Pho — Pickup Order App
 
-A full-stack demo for **online pickup orders** at [Gia Dinh Pho](https://www.giadinhpho.com/), built to showcase software engineering skills in interviews.
+A full-stack demo for **online pickup orders** at [Gia Dinh Pho](https://www.giadinhpho.com/)
 
 **Live repo:** [github.com/dlnguyenak68/giadinhpho-pickup-order](https://github.com/dlnguyenak68/giadinhpho-pickup-order)
 
